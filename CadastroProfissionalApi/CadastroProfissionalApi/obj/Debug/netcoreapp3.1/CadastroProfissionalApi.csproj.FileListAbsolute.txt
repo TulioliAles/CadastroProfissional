@@ -131,3 +131,4 @@ C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\C
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\CadastroProfissionalApi.dll
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\CadastroProfissionalApi.pdb
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\CadastroProfissionalApi.genruntimeconfig.cache
+C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\CadastroProfissionalApi.csproj.AssemblyReference.cache
