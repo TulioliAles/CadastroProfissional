@@ -22,7 +22,27 @@ namespace CadastroProfissionalApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Empregado>>> GetEmpregado()
         {
-            return await _context.Empregado.ToListAsync();
+            var empregados = (from e in _context.Empregado
+                              join d in _context.Profissao
+                              on e.IdProfissao equals d.Id
+                              
+                              select new Empregado
+                              {
+                                  Id = e.Id,
+                                  Nome = e.Nome,
+                                  Sobrenome = e.Sobrenome,
+                                  Email = e.Email,
+                                  Idade = e.Idade,
+                                  IdProfissao = e.IdProfissao,
+                                  DescricaoProfissao = d.DescricaoProfissao,
+                                  DataAdmissao = e.DataAdmissao,
+                                  Genero = e.Genero,
+                                  Ativo = e.Ativo,
+                                  Casado = e.Casado
+                              }
+                              ).ToListAsync();
+
+            return await empregados;
         }
 
         // GET: api/Empregado/5

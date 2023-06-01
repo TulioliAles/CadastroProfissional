@@ -118,6 +118,7 @@ C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\C
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\CadastroProfissionalApi.csproj.AssemblyReference.cache
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\CadastroProfissionalApi.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\CadastroProfissionalApi.AssemblyInfoInputs.cache
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\CadastroProfissionalApi.AssemblyInfo.cs
@@ -131,4 +132,3 @@ C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\C
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\CadastroProfissionalApi.dll
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\CadastroProfissionalApi.pdb
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\CadastroProfissionalApi.genruntimeconfig.cache
-C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\CadastroProfissionalApi.csproj.AssemblyReference.cache

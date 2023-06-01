@@ -27,7 +27,13 @@ namespace CadastroProfissionalApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
             services.AddDbContext<EmpregadoContext>(db => db.UseSqlServer(Configuration.GetConnectionString("ConEmp")));
+
+            services.AddCors(cors => cors.AddPolicy("MyPolicy", builder =>
+            {
+                builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+            }));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -40,6 +46,8 @@ namespace CadastroProfissionalApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors("MyPolicy");
 
             app.UseAuthorization();
 
