@@ -11,7 +11,62 @@
       <div class="row">
         <div class="col-md-3">
           <input type="hidden" name="id" [value]="empService.empregadoDados.id">
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" class="form-control" placeholder="Nome" #nome="ngModel" [(ngModel)]="empService.empregadoDados.nome" required>
         </div>
+        <div class="col-md-3">
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" name="sobrenome" class="form-control" placeholder="Sobrenome" #sobrenome="ngModel" [(ngModel)]="empService.empregadoDados.sobrenome" required>
+        </div>
+        <div class="col-md-3">
+          <label for="email">Email</label>
+          <input type="Email" name="email" class="form-control" placeholder="Email" #email="ngModel" [(ngModel)]="empService.empregadoDados.email" required>
+        </div>
+        <div class="col-md-3">
+          <label for="idade">Idade</label>
+          <input type="number" name="idade" class="form-control" placeholder="Idade" #idade="ngModel" [(ngModel)]="empService.empregadoDados.idade" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+            <label for="dataAdmissao" class="label">Data de admissão</label>
+            <input type="date" class="form-control" name="dataAdmissao" [(ngModel)]="empService.empregadoDados.dataAdmissao" #dataAdmissao="ngModel" required>
+        </div>
+        <div class="col-md-3">
+          <label for="descricaoProfissao" class="label">Profissão</label>
+          <select name="idProfisao" class="form-control" #idProfisao="ngModel" [(ngModel)]="empService.empregadoDados.idProfisao" required>
+            <option value="">Selecione</option>
+          </select>
+      </div>
+      <div class="col-md-6">
+        <label for="genero">Gênero</label>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="radio" checked="true" class="form-check-input" name="genero" #genero="ngModel" [(ngModel)]="empService.empregadoDados.genero" value="masculino">Masculino
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="genero" #genero="ngModel" [(ngModel)]="empService.empregadoDados.genero" value="feminino">Feminino
+              </label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" name="casado" #casado="ngModel" [(ngModel)]="empService.empregadoDados.casado">Casado
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" name="ativo" #ativo="ngModel" [(ngModel)]="empService.empregadoDados.ativo">Ativo
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   </form>
