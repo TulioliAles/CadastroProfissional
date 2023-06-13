@@ -6,36 +6,54 @@
 </div>
 
 <div class="formAdd">
-  <form autocomplete="off" #myForm="ngForm">
+  <form autocomplete="off" #myForm="ngForm" (ngSubmit)="myForm.form.valid && submit(myForm)">
     <div class="container">
       <div class="row">
         <div class="col-md-3">
           <input type="hidden" name="id" [value]="empService.empregadoDados.id">
-          <label for="nome">Nome</label>
+          <label for="nome" class="float-left">Nome</label>
+          <div *ngIf="nome.invalid && (nome.touched || nome.dirty)" class="float-right">
+            <p class="text-danger">Obrigatório</p>
+          </div>
           <input type="text" name="nome" class="form-control" placeholder="Nome" #nome="ngModel" [(ngModel)]="empService.empregadoDados.nome" required>
         </div>
         <div class="col-md-3">
-          <label for="sobrenome">Sobrenome</label>
+          <label for="sobrenome" class="float-left">Sobrenome</label>
+          <div *ngIf="sobrenome.invalid && (sobrenome.touched || sobrenome.dirty)" class="float-right">
+            <p class="text-danger">Obrigatório</p>
+          </div>
           <input type="text" name="sobrenome" class="form-control" placeholder="Sobrenome" #sobrenome="ngModel" [(ngModel)]="empService.empregadoDados.sobrenome" required>
         </div>
         <div class="col-md-3">
-          <label for="email">Email</label>
+          <label for="email" class="float-left">Email</label>
+          <div *ngIf="email.invalid && (email.touched || email.dirty)" class="float-right">
+            <p class="text-danger">Obrigatório</p>
+          </div>
           <input type="Email" name="email" class="form-control" placeholder="Email" #email="ngModel" [(ngModel)]="empService.empregadoDados.email" required>
         </div>
         <div class="col-md-3">
-          <label for="idade">Idade</label>
+          <label for="idade" class="float-left">Idade</label>
+          <div *ngIf="idade.invalid && (idade.touched || idade.dirty)" class="float-right">
+            <p class="text-danger">Obrigatório</p>
+          </div>
           <input type="number" name="idade" class="form-control" placeholder="Idade" #idade="ngModel" [(ngModel)]="empService.empregadoDados.idade" required>
         </div>
       </div>
       <div class="row">
         <div class="col-md-3">
-            <label for="dataAdmissao" class="label">Data de admissão</label>
+            <label for="dataAdmissao" class="label">Admissão</label>
+            <div *ngIf="dataAdmissao.invalid && (dataAdmissao.touched || dataAdmissao.dirty)" class="float-right">
+              <p class="text-danger">Obrigatório</p>
+            </div>
             <input type="date" class="form-control" name="dataAdmissao" [(ngModel)]="empService.empregadoDados.dataAdmissao" #dataAdmissao="ngModel" required>
         </div>
         <div class="col-md-3">
-          <label for="descricaoProfissao" class="label">Profissão</label>
+          <label for="descricaoProfissao" class="label float-left">Profissão</label>
+          <div *ngIf="idProfisao.touched && idProfisao.value==0" class="float-right">
+            <p class="text-danger">Obrigatório</p>
+          </div>
           <select name="idProfisao" class="form-control" #idProfisao="ngModel" [(ngModel)]="empService.empregadoDados.idProfisao" required>
-            <option value="">Selecione</option>
+            <option value="0">Selecione</option>
           </select>
       </div>
       <div class="col-md-6">
@@ -67,6 +85,15 @@
           </div>
         </div>
       </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8"></div>
+        <div class="col-md-2">
+          <button type="submit" class="btn btn-success btn-block">Salvar</button>
+        </div>
+        <div class="col-md-2">
+          <button type="reset" class="btn btn-danger btn-block">Cancelar</button>
+        </div>
       </div>
     </div>
   </form>

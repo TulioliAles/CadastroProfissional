@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { EmpregadoService } from 'src/app/services/empregado.service';
 
 @Component({
@@ -13,4 +14,7 @@ export class EmpregadoFormularioComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  submit(form: NgForm){
+    console.log();
+  }
 }
