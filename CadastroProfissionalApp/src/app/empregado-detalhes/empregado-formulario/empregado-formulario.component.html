@@ -54,6 +54,7 @@
           </div>
           <select name="idProfisao" class="form-control" #idProfisao="ngModel" [(ngModel)]="empService.empregadoDados.idProfisao" required>
             <option value="0">Selecione</option>
+            <option [value]="prof.id" *ngFor="let prof of profService.listaProfissao"> {{ prof.descricaoProfissao }}</option>
           </select>
       </div>
       <div class="col-md-6">
@@ -89,7 +90,7 @@
       <div class="row">
         <div class="col-md-8"></div>
         <div class="col-md-2">
-          <button type="submit" class="btn btn-success btn-block">Salvar</button>
+          <button type="submit" [disabled]="idProfisao.value == 0" class="btn btn-success btn-block">Salvar</button>
         </div>
         <div class="col-md-2">
           <button type="reset" class="btn btn-danger btn-block">Cancelar</button>

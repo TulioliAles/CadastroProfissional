@@ -10,8 +10,8 @@ export class ProfissaoService {
 
   constructor(private http: HttpClient) { }
 
-  profissaoUrl: string='https://localhost:44381/api/Profissao';
-  listaProfissao: Profissao[]=[];
+  profissaoUrl: string = 'https://localhost:44381/api/Profissao';
+  listaProfissao: Profissao[] = [];
 
   buscarProfissoes():Observable<Profissao[]>{
     return this.http.get<Profissao[]>(this.profissaoUrl);

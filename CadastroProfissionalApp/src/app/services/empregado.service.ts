@@ -10,9 +10,9 @@ export class EmpregadoService {
 
   constructor(private http:HttpClient) { }
 
-  empregadoUrl: string='https://localhost:44381/api/Empregado';
-  listaEmpregado: Empregado[]=[];
-  empregadoDados: Empregado=new Empregado();
+  empregadoUrl: string = 'https://localhost:44381/api/Empregado';
+  listaEmpregado: Empregado[] = [];
+  empregadoDados: Empregado = new Empregado();
 
   salvarEmpregado(){
     return this.http.post(this.empregadoUrl, this.empregadoDados);

@@ -125,10 +125,14 @@ C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\C
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\CadastroProfissionalApi.csproj.CoreCompileInputs.cache
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\CadastroProfissionalApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\staticwebassets\CadastroProfissionalApi.StaticWebAssets.Manifest.cache
-C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\staticwebassets\CadastroProfissionalApi.StaticWebAssets.xml
-C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\scopedcss\bundle\CadastroProfissionalApi.styles.css
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\CadastroProfissionalApi.RazorTargetAssemblyInfo.cache
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\CadastroProfissionalApi.csproj.CopyComplete
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\CadastroProfissionalApi.dll
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\CadastroProfissionalApi.pdb
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\CadastroProfissionalApi.genruntimeconfig.cache
+C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\bin\Debug\netcoreapp3.1\CadastroProfissionalApi.StaticWebAssets.xml
+C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\staticwebassets\CadastroProfissionalApi.StaticWebAssets.Pack.cache
+C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.CadastroProfissionalApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.CadastroProfissionalApi.props
+C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.CadastroProfissionalApi.props
+C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net\CadastroProfissionalApi\CadastroProfissionalApi\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.CadastroProfissionalApi.props
