@@ -49,12 +49,12 @@
         </div>
         <div class="col-md-3">
           <label for="descricaoProfissao" class="label float-left">Profissão</label>
-          <div *ngIf="idProfisao.touched && idProfisao.value==0" class="float-right">
+          <div *ngIf="idProfissao.touched && idProfissao.value==0" class="float-right">
             <p class="text-danger">Obrigatório</p>
           </div>
-          <select name="idProfisao" class="form-control" #idProfisao="ngModel" [(ngModel)]="empService.empregadoDados.idProfisao" required>
+          <select name="idProfissao" class="form-control" #idProfissao="ngModel" [(ngModel)]="empService.empregadoDados.idProfissao" required>
             <option value="0">Selecione</option>
-            <option [value]="prof.id" *ngFor="let prof of profService.listaProfissao"> {{ prof.descricaoProfissao }}</option>
+            <option *ngFor="let prof of profService.listaProfissao" [ngValue]="prof.id"> {{ prof.descricaoProfissao }}</option>
           </select>
       </div>
       <div class="col-md-6">
@@ -90,7 +90,7 @@
       <div class="row">
         <div class="col-md-8"></div>
         <div class="col-md-2">
-          <button type="submit" [disabled]="idProfisao.value == 0" class="btn btn-success btn-block">Salvar</button>
+          <button type="submit" [disabled]="idProfissao.value == 0" class="btn btn-success btn-block">Salvar</button>
         </div>
         <div class="col-md-2">
           <button type="reset" class="btn btn-danger btn-block">Cancelar</button>

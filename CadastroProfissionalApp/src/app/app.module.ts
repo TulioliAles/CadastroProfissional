@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { EmpregadoDetalhesComponent } from './empregado-detalhes/empregado-detalhes.component';
 import { EmpregadoFormularioComponent } from './empregado-detalhes/empregado-formulario/empregado-formulario.component';
 
+import { DatePipe } from '@angular/common';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,7 @@ import { EmpregadoFormularioComponent } from './empregado-detalhes/empregado-for
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

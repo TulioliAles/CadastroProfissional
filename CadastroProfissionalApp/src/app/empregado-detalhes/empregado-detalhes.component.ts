@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EmpregadoService } from '../services/empregado.service';
 import { Empregado } from '../models/empregado.model';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-empregado-detalhes',
@@ -9,7 +10,7 @@ import { Empregado } from '../models/empregado.model';
 })
 export class EmpregadoDetalhesComponent implements OnInit {
 
-  constructor(public empService : EmpregadoService) { }
+  constructor(public empService : EmpregadoService, public datePipe: DatePipe) { }
 
   ngOnInit(): void {
     this.empService.buscarEmpregados().subscribe(dados => {
@@ -19,6 +20,10 @@ export class EmpregadoDetalhesComponent implements OnInit {
 
   editaEmpregado(selecionaEmpregado: Empregado){
     console.log(selecionaEmpregado);
+
+    let df = this.datePipe.transform(selecionaEmpregado.dataAdmissao, 'yyyy-MM-dd')
+    selecionaEmpregado.dataAdmissao = df;
+
     this.empService.empregadoDados = selecionaEmpregado;
   }
 

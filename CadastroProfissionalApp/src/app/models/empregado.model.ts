@@ -8,6 +8,6 @@ export class Empregado {
   genero: string='male';
   casado: number;
   ativo: number;
-  idProfisao: number=0;
+  idProfissao: number=0;
   descricaoProfissao: string='';
 }
