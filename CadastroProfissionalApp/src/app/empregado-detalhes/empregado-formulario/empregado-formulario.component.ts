@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Empregado } from 'src/app/models/empregado.model';
 import { EmpregadoService } from 'src/app/services/empregado.service';
@@ -12,6 +12,9 @@ import { ProfissaoService } from 'src/app/services/profissao.service';
 export class EmpregadoFormularioComponent implements OnInit {
 
   constructor(public empService : EmpregadoService, public profService : ProfissaoService) { }
+
+  @ViewChild('checkbox1') checkBox: ElementRef;
+  isSlide: string = 'off';
 
   ngOnInit(): void {
     this.profService.buscarProfissoes().subscribe(data => {
@@ -33,7 +36,6 @@ export class EmpregadoFormularioComponent implements OnInit {
     this.empService.salvarEmpregado().subscribe(d => {
       this.resetForm(myForm);
       this.refreshDados();
-      console.log("Salvo com sucesso!");
     });
   }
 
@@ -41,18 +43,29 @@ export class EmpregadoFormularioComponent implements OnInit {
     this.empService.atualizarEmpregado().subscribe(d => {
       this.resetForm(myForm);
       this.refreshDados();
-      console.log("Atualizado com sucesso!");
     });
   }
 
   resetForm(myForm: NgForm){
-    myForm.form.reset();
+    myForm.form.reset(myForm.value);
     this.empService.empregadoDados = new Empregado();
+    this.hideShowSlide();
   }
 
   refreshDados(){
     this.empService.buscarEmpregados().subscribe(res => {
         this.empService.listaEmpregado = res;
       });
+  }
+
+  hideShowSlide(){
+    if(this.checkBox.nativeElement.checked){
+      this.checkBox.nativeElement.checked = false;
+      this.isSlide = 'off';
+    }
+    else{
+      this.checkBox.nativeElement.checked = true;
+      this.isSlide = 'on';
+    }
   }
 }
